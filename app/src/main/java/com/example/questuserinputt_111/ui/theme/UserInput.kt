@@ -80,6 +80,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 color = Color.White
             )
         }
+        Column(
+            modifier = Modifier
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+
 
 
 
