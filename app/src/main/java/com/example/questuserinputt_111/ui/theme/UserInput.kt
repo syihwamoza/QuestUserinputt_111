@@ -72,6 +72,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 )
                 .padding(16.dp)
         ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+
 
 
 
