@@ -202,9 +202,39 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     ) {
                         Text("Submit")
                     }
-
                 }
             }
+            HorizontalDivider(
+                modifier = Modifier.padding(
+                    bottom = dimensionResource(R.dimen.padding_medium),
+                    top = dimensionResource(id = R.dimen.padding_medium)
+                ),
+                thickness = dimensionResource(R.dimen.divider_tipis),
+                color = Color.DarkGray
+            )
+
+            if (nama.isNotEmpty()) {
+                ElevatedCard(
+                    elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.Black),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                ) {
+                    Column(
+                        modifier = Modifier.padding(horizontal = 15.dp, vertical = 15.dp),
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Text(text = "Nama   : " + nama, color = Color.White)
+                        Text(text = "Gender : " + jenis, color = Color.White)
+                        Text(text = "Status : " + status, color = Color.White)
+                        Text(text = "Alamat : " + alamat, color = Color.White)
+                    }
+                }
+            }
+
+        }
+    }
+}
 
 
 
