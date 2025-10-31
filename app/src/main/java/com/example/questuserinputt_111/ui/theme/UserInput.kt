@@ -45,12 +45,21 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     var textJK by remember { mutableStateOf("") }
     var textstat by remember { mutableStateOf("") }
 
-
     var nama by remember { mutableStateOf(value = "") }
     var jenis by remember { mutableStateOf(value = "") }
     var status by remember { mutableStateOf(value = "") }
     var alamat by remember { mutableStateOf(value = "") }
 
     val gender: List<String> = listOf("Laki-laki", "Perempuan")
-    val statkawin: List<String> = listOf("Janda", "Single", "Duda")}
+    val statkawin: List<String> = listOf("Janda", "Single", "Duda")
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFFF0E6FF)),
+        horizontalAlignment = Alignment.CenterHorizontally
+
+
+
+
 
