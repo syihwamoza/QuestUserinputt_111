@@ -101,8 +101,32 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
+                    Text(
+                        text = "Nama Lengkap",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 12.sp,
+                        color = Color.Gray
+                    )
+                    OutlinedTextField(
+                        value = textNama,
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large,
+                        modifier = Modifier.fillMaxWidth(),
+                        placeholder = { Text(text = "Isian nama lengkap") },
+                        onValueChange = {
+                            textNama = it
+                        }
+                    )
+                    Text(
+                        text = "Jenis Kelamin",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 12.sp,
+                        color = Color.Gray,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
 
                 }
+
 
 
 
