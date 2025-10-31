@@ -58,6 +58,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .background(Color(0xFFF0E6FF)),
         horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(
+
+
 
 
 
