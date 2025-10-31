@@ -87,6 +87,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth(),
+
+        }
 
 
 
