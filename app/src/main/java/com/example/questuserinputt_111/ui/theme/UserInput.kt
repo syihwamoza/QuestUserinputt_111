@@ -76,6 +76,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 text = "Formulir Pendaftaran",
                 fontSize = 22.sp,
                 fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Serif,
+                color = Color.White
+            )
+        }
+
 
 
 
