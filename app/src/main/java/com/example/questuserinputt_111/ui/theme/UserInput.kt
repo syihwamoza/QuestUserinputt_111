@@ -171,10 +171,45 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                             }
                         }
                     }
-
-
+                    Text(
+                        text = "Alamat",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 12.sp,
+                        color = Color.Gray,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
+                    OutlinedTextField(
+                        value = textAlamat,
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = MaterialTheme.shapes.large,
+                        placeholder = { Text(text = "Alamat") },
+                        onValueChange = {
+                            textAlamat = it
+                        }
+                    )
+                    Button(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 16.dp),
+                        enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty() && textJK.isNotEmpty() && textstat.isNotEmpty(),
+                        onClick = {
+                            nama = textNama
+                            jenis = textJK
+                            status = textstat
+                            alamat = textAlamat
+                        }
+                    ) {
+                        Text("Submit")
+                    }
 
                 }
+            }
+
+
+
+
+
 
 
 
