@@ -124,6 +124,27 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         color = Color.Gray,
                         modifier = Modifier.padding(top = 8.dp)
                     )
+                    Column {
+                        gender.forEach { item ->
+                            Row(
+                                modifier = Modifier
+                                    .selectable(
+                                        selected = textJK == item,
+                                        onClick = { textJK = item }
+                                    )
+                                    .fillMaxWidth(),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = textJK == item,
+                                    onClick = {
+                                        textJK = item
+                                    })
+                                Text(item)
+                            }
+                        }
+                    }
+
 
                 }
 
