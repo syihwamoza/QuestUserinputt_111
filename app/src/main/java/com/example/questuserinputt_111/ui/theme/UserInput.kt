@@ -63,6 +63,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxWidth()
                 .background(
+                    brush = Brush.verticalGradient(
+                        colors = listOf(
+                            Color(0xFF9C27B0),
+                            Color(0xFFE1BEE7)
+                        )
+                    )
+                )
 
 
 
