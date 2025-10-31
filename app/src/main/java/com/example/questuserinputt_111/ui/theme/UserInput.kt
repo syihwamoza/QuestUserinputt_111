@@ -70,6 +70,9 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         )
                     )
                 )
+                .padding(16.dp)
+        ) {
+
 
 
 
